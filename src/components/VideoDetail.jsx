@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import ReactPlayer from "react-player";
 import { Typography, Box, Stack } from "@mui/material";
-import { CheckCircle, SettingsInputSvideoSharp } from "@mui/icons-material";
-import { Video } from "./";
+import { CheckCircle } from "@mui/icons-material";
+import { Videos } from "./";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 
 const VideoDetail = () => {
@@ -66,7 +66,7 @@ const VideoDetail = () => {
           </Box>
         </Box>
         <Box px={2} py={{ md: 1, xs: 5 }}>
-          <Video videos={videos} direction="column" />
+          <Videos videos={videos} direction="column" />
         </Box>
       </Stack>
     </Box>
